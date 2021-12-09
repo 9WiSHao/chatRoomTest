@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 头部框 */
+.head {
+  width: 400px;
+  height: 60px;
+  background-color: #ffffff;
+  border: solid;
+  border-width: 0 0 2px 0;
+  border-color: #ed96b6;
+  margin: 0 auto;
+  display: flex;
+}
+
+.back {
+  margin: 8px 24px 0 10px;
+  font-weight: 1000;
+  font-size: xx-large;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.headName {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+/* 主体大框 */
+.body {
+  margin: 6px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 示例评论整体 */
+.comment1 {
+  width: 400px;
+}
+/* 示例评论上部（头像和头像右边） */
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+/* 头像 */
+.chatHead {
+  height: 80px;
+  width: 80px;
+  padding: 0px 8px 10px 0px;
+}
+.chatHead img {
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ec97b6;
+}
+/* 头像右边整体 */
+.right {
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+}
+/* 头像右边的上面第一个 */
+.userName {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 6px 0;
+}
+/* 名字 */
+.name {
+  font-family: 黑体;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* 那三个点 */
+.more {
+  font-size: 16px;
+  font-weight: 1000;
+  color: grey;
+}
+.more:hover {
+  cursor: pointer;
+}
+/* 评论主体文字 */
+.commentText {
+  font-family: 宋体;
+  width: 305px;
+}
+/* 示例评论下部 */
+.down {
+  display: flex;
+  justify-content: space-between;
+}
+/* 示例评论下部时间楼层 */
+.time {
+  font-family: 黑体;
+  color: grey;
+  font-size: 14px;
+}
+/* 底部整体大框 */
+.bottom0 {
+  height: 44px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: pink;
+}
+/* 底部居中框 */
+.bottom1 {
+  margin: 0 auto;
+  height: 44px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 底部发表按钮 */
+#go {
+  height: 30px;
+  width: 64px;
+  margin-right: 6px;
+  border-radius: 14px;
+  border: none;
+  background-color: #ec97b6;
+  font-family: 黑体;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+#go:hover {
+  cursor: pointer;
+}
+#go:active {
+  opacity: 0.6;
+}
+
+/* 底部输入框 */
+#yourMessage {
+  border: 0px;
+  width: 220px;
+  height: 30px;
+  outline: none;
+}
+/* 新加入的评论头图 */
+.img2 {
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ec97b6;
+}
+
+.open + .close {
+  height: 30px;
+  width: 400px;
+  background-color: rgb(94, 94, 94);
+  display: flex;
+  justify-content: center;
+}
+
+.inOpen + .inClose {
+  color: #000000;
+  font-size: smaller;
+  font-style: italic;
+}
