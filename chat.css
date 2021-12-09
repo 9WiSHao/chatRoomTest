@@ -32,6 +32,7 @@
 
 /* 主体大框 */
 .body {
+  height: 400px;
   margin: 6px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -60,11 +61,10 @@
 /* 头像右边整体 */
 .right {
   width: 306px;
-  display: flex;
-  flex-direction: column;
 }
 /* 头像右边的上面第一个 */
 .userName {
+  width: 306px;
   display: flex;
   justify-content: space-between;
   margin: 0 0 6px 0;
@@ -87,7 +87,8 @@
 /* 评论主体文字 */
 .commentText {
   font-family: 宋体;
-  width: 305px;
+  width: 300px;
+  word-break: break-all;
 }
 /* 示例评论下部 */
 .down {
@@ -141,8 +142,9 @@
 /* 底部输入框 */
 #yourMessage {
   border: 0px;
-  width: 220px;
+  width: 310px;
   height: 30px;
+  padding: 0 0 0 10px;
   outline: none;
 }
 /* 新加入的评论头图 */
@@ -152,16 +154,20 @@
   border: 2px solid #ec97b6;
 }
 
-.open + .close {
-  height: 30px;
+.open,
+.close {
+  height: 20px;
   width: 400px;
-  background-color: rgb(94, 94, 94);
+  background-color: white;
   display: flex;
   justify-content: center;
+  border: 0 0 2px 0 solid black;
 }
 
-.inOpen + .inClose {
-  color: #000000;
+.inOpen,
+.inClose {
+  color: grey;
+  opacity: 0.6;
   font-size: smaller;
   font-style: italic;
 }
