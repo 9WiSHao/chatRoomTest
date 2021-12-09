@@ -3,7 +3,7 @@ let contentBox = document.querySelector(".body")
 let placeholder = document.querySelector('#placeholderBlock')
 
 document.querySelector('.back')['onclick']=x=>{
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 socket.onopen = function(e) {
     alert("已连接");
