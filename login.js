@@ -6,11 +6,7 @@ document.querySelector('.inPutButton')['onclick']=x=>{
         alert('用户名为空')
     }else{
         localStorage.setItem('username', inPutUser.value);
-        if(inPutAvatar.value !== ''){
-            localStorage.setItem('avatar', inPutAvatar.value);
-        } else {
-            localStorage.setItem('avatar', './img/阿卡林头像.jpg');
-        }   
+        localStorage.setItem('avatar', inPutAvatar.value);
         window.location.href = "chat.html";
     }
 }
