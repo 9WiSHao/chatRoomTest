@@ -13,26 +13,23 @@
   margin: 0 auto;
   display: flex;
 }
-
+/* 退出聊天室转到登陆页面按钮 */
 .back {
   margin: 8px 24px 0 10px;
   font-weight: 1000;
   font-size: xx-large;
 }
-
 .back:hover {
   cursor: pointer;
 }
-
+/* 头部伟伦字样 */
 .headName {
   font-size: larger;
   font-weight: bold;
   margin-top: 18px;
 }
-
 /* 主体大框 */
 .body {
-  height: 400px;
   margin: 6px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -55,6 +52,7 @@
 }
 .chatHead img {
   height: 80px;
+  width: 80px;
   border-radius: 50%;
   border: 2px solid #ec97b6;
 }
@@ -107,7 +105,6 @@
   width: 100%;
   position: fixed;
   bottom: 0px;
-  background-color: pink;
 }
 /* 底部居中框 */
 .bottom1 {
@@ -118,6 +115,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 10px 0 gray;
 }
 /* 底部发表按钮 */
 #go {
@@ -138,7 +136,6 @@
 #go:active {
   opacity: 0.6;
 }
-
 /* 底部输入框 */
 #yourMessage {
   border: 0px;
@@ -147,13 +144,12 @@
   padding: 0 0 0 10px;
   outline: none;
 }
-/* 新加入的评论头图 */
-.img2 {
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #ec97b6;
+/* 和输入框等高空盒子在这占位置，以免下面的输入框挡住评论 */
+.blank {
+  height: 44px;
+  width: 400px;
 }
-
+/* 进和出聊天室信息 */
 .open,
 .close {
   height: 20px;
@@ -163,7 +159,6 @@
   justify-content: center;
   border: 0 0 2px 0 solid black;
 }
-
 .inOpen,
 .inClose {
   color: grey;
